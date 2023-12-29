@@ -1,0 +1,13 @@
+p {
+	color: black;
+	background: white;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+}
+
+h1 {
+	font-family: arial;
+	text-shadow: 2px 2px #ff0000;
+	text-align: center;
+}

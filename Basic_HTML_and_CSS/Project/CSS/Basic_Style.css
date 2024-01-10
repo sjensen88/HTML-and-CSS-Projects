@@ -21,7 +21,7 @@ h1 {
     ---------------------------------*/
 
 .container .squares:nth-child(-n+4){
-    background-image: url("../Images/Icons/icons.png");
+    background-image: url("..Images/Icons/icons.png");
     color: #fff;
     float: left;
     width: 100px;
@@ -30,7 +30,6 @@ h1 {
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
-    transition: transform .5s ease-in-out;
 }
 
 /*  -------------------------------------------
@@ -38,10 +37,5 @@ h1 {
     -----------------------------------------*/
 
 .squares:nth-child(-n+4) p {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
+    font-family: "Helvetica"
 }

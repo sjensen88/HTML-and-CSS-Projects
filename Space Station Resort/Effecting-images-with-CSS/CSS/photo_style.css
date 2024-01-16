@@ -59,7 +59,7 @@
     -------------------------*/
 
 .photo-overlay {
-  opacity: 0;
+  opacity: 0;                   /*opacity has 2 values, 0 and 1: 100% solid, 0% is transparent*/
   transition: opacity .1s;
   border-radius: 10px;
   cursor: pointer;

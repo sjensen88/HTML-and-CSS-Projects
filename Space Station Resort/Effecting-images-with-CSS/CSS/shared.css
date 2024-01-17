@@ -144,7 +144,7 @@ section {                    /*this is a semantical tag built into HTML5, it's n
         HOME SECTION STYLES
   =============================*/
   #home {
-    background: url(../Images/planets.jpg) no-repeat 50% 50%;    /*in CSS we use url()*/ /*no repeat means not to repeat the image, it's large enough*/
+    background: url(../../Images/planets.jpg) no-repeat 50% 50%;    /*in CSS we use url()*/ /*no repeat means not to repeat the image, it's large enough*/
     background-attachment: fixed;                               /*image does not move with the rest of things on webpage*/
     -webkit-background-size: cover;                             /*tells older browsers to cover the entire background with the photo*/
     -moz-background-size: cover;
@@ -211,8 +211,8 @@ section {                    /*this is a semantical tag built into HTML5, it's n
     padding: 10px;
     border-radius: 8px;         /*rounding the edges*/
     margin: 0px auto;
-    background-color: rgba (100, 65, 0, .3);
-    box-shadow: -1px -1px 1px 0 rgba (0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);    /*two colors for the box shadow, subtle shadow at top and darker shadow on the right*/
+    background-color: rgba(100, 65, 0, .3);
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 1), 1px 2px 10px 0 rgba(0, 0, 0, 0.5);    /*two colors for the box shadow, subtle shadow at top and darker shadow on the right*/
 }
 
 .reservation h2 {
@@ -254,7 +254,7 @@ section {                    /*this is a semantical tag built into HTML5, it's n
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input [type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;

@@ -1,23 +1,33 @@
-h1 {
-	text-align: center;
+/*=============================
+     HOME PAGE MENU STYLES
+==============================*/
+
+body {
+	background-color: #CAB6BA;
 }
 
-h3 {
+h1 {
 	text-align: center;
+	font-family: 'Book Antiqua';
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+li {
+	text-align: center;
+	font-family: 'Book Antiqua';
+	font-size: 20px;
 }
 
 p {
 	text-align: center;
 }
 
-
 ul {
 	list-style-type: none;
 	margin: auto;
 	padding: 0;
 	overflow: hidden;
-	border: 1px solid #e7e7e7;
-	background-color: #f3f3f3;
 	text-align: center;
 }
 
@@ -33,24 +43,31 @@ li a{
 	text-decoration: none;
 }
 
-img {
-	width: 500px;
-}
+/*=====================================
+        GALLERY SECTION STYLES
+=====================================*/
 
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%
-}
-
-.row {
-	display: flex;
+.photo-container {
+	display: grid;
+	grid-gap: 10px;
+	margin: 15px auto;
 	flex-wrap: wrap;
-	padding: 0 4px;
+	padding: 10px;
+}
+
+.photo-container img {
+	max-width: 100%;
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	overflow: hidden;
 }
 
 .column {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
 	flex: 50%;
 	padding: 0 4px;
 }

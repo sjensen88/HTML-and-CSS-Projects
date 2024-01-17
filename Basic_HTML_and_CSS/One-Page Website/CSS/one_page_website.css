@@ -1,0 +1,187 @@
+/*=============================
+     HOME PAGE MENU STYLES
+==============================*/
+
+body {
+	background-color: #CAB6BA;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Book Antiqua';
+	font-size: 40px;
+	letter-spacing: 1px;
+}
+
+li {
+	text-align: center;
+	font-family: 'Book Antiqua';
+	font-size: 20px;
+}
+
+p {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+li {
+	display: inline;
+}
+
+li a{
+	display: inline;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/*=====================================
+        GALLERY SECTION STYLES
+=====================================*/
+
+.photo-container {
+	display: grid;
+	grid-gap: 10px;
+	margin: 15px auto;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.photo-container img {
+	max-width: 100%;
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.column {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%
+	flex: 50%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+/*=====================================
+         CONTACT FORM STYLE
+=====================================*/
+
+
+#contact {
+	background-color: #CAB6BA;
+}
+
+.contact-form h2 {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #13161B;
+	font-family: 'Book Antiqua';
+	font-weight: 500;
+	font-size: 1.3em;
+	letter-spacing: 0pt;
+	word-spacing: 0pt;
+}
+
+.contact-form h2 span {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	color: #13161B;
+	font-family: 'Book Antiqua';
+}
+
+.form {
+	font-size: 15px;
+	outline: none;
+	font-weight: 600;
+	padding: 12px 12px;
+	width: 50%;
+	margin: 2% auto;
+	border-radius: 7px;
+	background: rgb(227, 222, 222);
+}
+
+.form input[type="text"] {
+	font-size: 15px;
+	outline: none;
+	font-weight: 500;
+	color: #8D8E8F;
+	padding: 2% 1% 2% 7%;
+	width: 80%;
+	border-top: 1px solid #090B0D;
+	border-right: 2px solid #424549;
+	border-bottom: 2px solid #424549;
+	border-left: 1px solid #090B0D;
+	margin: 10px 1em;
+	border-radius: 4px;
+	background: #FFFFFF;
+	font-family: 'Book Antiqua';
+}
+
+.form input[type="text"]:hover {
+	box-shadow: 0 0 18px rgba(102, 0, 0, .8);
+}
+
+.form-spacer {
+	padding: 30px 39px;
+}
+
+.submit {
+	text-align: center;
+}
+
+.submit input[type="submit"] {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	border: none;
+	font-weight: 900;
+	outline: none;
+	text-align: center;
+	font-family: 'Book Antiqua';
+	margin: 0px 3%;
+	padding: 7px 0px;
+	width: 25%;
+	font-size: 18px;
+	transition: border-color 0.3s color 0.3s background-color 0.3s;
+	border-radius: 7px;
+	background-color: #000000;
+	box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submit input[type="submit"]:hover {
+	color: #000;
+	background-color: #8D8E8F;
+	box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.info h3 {
+	text-align: center;
+	font-family: 'Book Antiqua';
+}
+
+.summary h3 {
+	text-align: center;
+	font-family: 'Book Antiqua';
+}
+
+.summary p {
+	text-align: center;
+	font-family: 'Times New Roman';
+	font-style: italic;
+}

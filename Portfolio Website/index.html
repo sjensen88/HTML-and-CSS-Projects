@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<!--HEAD-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>Stephanie's Tech Academy Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./portfolio_website.css">
+</head>
+
+<!--BODY-->
+
+<body> 
+    <body class="background">
+    
+<!--NAVBAR-->
+    <div class="navbar">
+        <a class="active" href="#home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <br>
+    <br>
+
+<!--BACKGROUND VIDEO-->
+
+    <div id="Home">
+        <video autoplay muted loop id="typing-vid">
+            <source src="./images/typing.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.   <!--DISPLAY MSG IF VID FAILS TO RUN-->
+        </video>
+    </div>
+
+<!--TEXT OVERLAYING VIDEO-->
+    <div class="video-text">
+        <h1 class="white-text">Stephanie Jensen's Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>Simplicity is about the unexpected pleasure derived from what is likely to be insignificant and would otherwise go
+                unnoticed.</q>
+                <br> -John Maeda
+                <br>
+                <br> Hi, my name is Stephanie. Welcome to my portfolio website. On it, I will tell you about my background and
+                experience.
+                <br>
+                <br> Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+
+<!--ABOUT SECTION-->
+<div class="row" id="about">
+    
+    <!--LEFT COLUMN-->
+    <div class="column_2">
+        <img src="./images/wfh.jpg" alt="home office">
+    </div>
+
+    <!--RIGHT COLUMN-->
+    <div class="column_1">
+        <h1>About</h1>
+        <p>
+            I am a Chicago native and freelance photographer-turned-software developer who enjoys creating solutions for my clients!
+            <br>
+            <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s
+            Software Developer Boot Camp, and trained and experienced in the following web and programming languages:
+            HTML, CSS, JavaScript, SQL, C# and more.
+            <br>
+            <br>I am a full-stack developer trained in UX/UI design and would love to work with you on your next project. 
+            <a href="#contact">Contact</a> me below!
+        </p>
+    </div>
+</div>
+
+<!--GITHUB SECTION-->
+<div class="row" id="github">
+
+    <!--LEFT COLUMN-->
+        <div class="column_1">
+            <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:
+                <br>
+                <p class="center"><a href="https://github.com/sjensen88" target="_blank">Stephanie's Github</a></p>
+                </p>
+        </div>
+
+    <!--RIGHT COLUMN-->
+        <div class="column_2">
+            <a href="https://github.com/sjensen88" target="_blank"><img src="./images/gitcatstrong.png" alt="GitHub Cat Strong"></a>
+        </div>
+</div>
+
+<!--CONTACT-->
+<div class="row" id="contact">
+
+    <!--CONTACT IMAGE, LEFT COLUMN-->
+    <div class="column_2 column_tall">
+        <img src="./images/SJ.jpeg" alt="headshot">
+    </div>
+
+    <!--CONTACT FORM, RIGHT COLUMN-->
+    <div class="column_1 column_tall">
+        <h1>Contact</h1>
+
+        <form action="https://formspree.io/f/xrgneqzo" method="POST">
+            <label>Name:</label>
+            <input type="text" placeholder="Please enter your name here">
+            <label>Email:</label>
+            <input type="text" id="email" name="Email" placeholder="Please enter your email here">
+            <label>Message:</label>
+            <input type="text" id="message" name="Message" placeholder="Please write your message here">
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+</div>
+
+<!--FOOTER-->
+<footer>
+    <p>
+    <p class="center">&copy Stephanie Jensen, 2024</p>
+    <br>
+    </p>
+</footer>
+
+</body>

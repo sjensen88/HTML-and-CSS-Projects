@@ -1,0 +1,227 @@
+/* --------------------------------
+          NAVIGATION STYLE
+---------------------------------*/
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color:antiquewhite;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: lightseagreen;
+}
+
+/* --------------------------------
+           HOME STYLE
+---------------------------------*/
+
+h1 {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 5%;
+}
+
+h3 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.actions p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    filter: grayscale(100%);
+    border-radius: 8px;
+}
+
+/* --------------------------------
+          TABLE STYLE
+---------------------------------*/
+
+
+table {
+    border: 2px solid black;
+    border-radius: 4px;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+th, td {
+    text-align: center;
+    height: 20px;
+    vertical-align: center;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    margin: 0;
+}
+
+th {
+    background-color: gray;
+}
+
+
+/* --------------------------------
+        PHOTO-OVERLAY STYLE
+---------------------------------*/
+
+.photo-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 40%;
+    right: 40%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
+
+/* --------------------------------
+        2- COLUMN STYLE
+---------------------------------*/
+
+.column {
+    float: left;
+    flex: 50%;
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    text-align: center;
+    margin:auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hover-effect p:hover {
+    color:blue;
+}
+
+/* --------------------------------
+       IMAGE HOVER OVERLAY
+---------------------------------*/
+
+.container {
+    position: relative;
+    width: 300px;
+    margin: auto;
+}
+
+.logo {
+    display: block;
+    width: 100%
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5 ease;
+    background-color:gray;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color:white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* --------------------------------
+        VIDEO OVERLAY STYLE
+---------------------------------*/
+
+#vid {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 250px;
+    margin: auto;
+}
+
+#vid > #video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#vid > span {
+    color: white;
+    z-index: 2;
+    text-shadow: 2px 2px black;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* --------------------------------
+          FOOTER STYLE
+---------------------------------*/
+
+footer {
+    text-align: center;
+    padding: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

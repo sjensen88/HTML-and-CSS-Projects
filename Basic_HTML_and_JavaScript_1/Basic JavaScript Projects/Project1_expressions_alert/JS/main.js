@@ -1,2 +1,2 @@
-var x = "\"Stephanie said, \"I love to code!\"" + ", as she pulled her hair out in frustration."
-document.write(x);
+var family = "The Jensens", Dad = "Steve", Mom = "Maria", Daughter = "Stephanie", Son = "Stephen"; 
+document.write(Dad);

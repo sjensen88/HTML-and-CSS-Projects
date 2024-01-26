@@ -217,6 +217,17 @@ footer {
     height: 450px;
 }
 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row {
+    margin-top: -55px;
+    padding-top: 55px;
+}
+
 /*----------------------------
     CONTACT SECTION STYLING
 ----------------------------*/

@@ -3,7 +3,7 @@
 ==============================*/
 
 body {
-	background-color: #CAB6BA;
+	background-color: rgba(229, 225, 225, 0.8);
 }
 
 h1 {
@@ -11,12 +11,14 @@ h1 {
 	font-family: 'Book Antiqua';
 	font-size: 40px;
 	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 30px 0 8px 0;
 }
 
 li {
 	text-align: center;
 	font-family: 'Book Antiqua';
-	font-size: 20px;
+	font-size: 18px;
 }
 
 p {
@@ -46,12 +48,11 @@ li a{
 /*Lightbox Gallery*/
 
 .row > .column {
-	padding: 8px 5px;
+	padding: 8px 0px;
 }
 
 .row:after {
 	content: "";
-	display: table;
 	clear: both;
 }
 
@@ -183,10 +184,6 @@ img.hover-shadow {
 =====================================*/
 
 
-#contact {
-	background-color: #CAB6BA;
-}
-
 .contact-form h2 {
 	width: 70%;
 	text-align: center;
@@ -212,10 +209,10 @@ img.hover-shadow {
 	outline: none;
 	font-weight: 600;
 	padding: 12px 12px;
-	width: 50%;
+	width: 40%;
 	margin: 2% auto;
 	border-radius: 7px;
-	background: rgb(227, 222, 222);
+	background: rgba(207, 199, 199, 0.8);
 }
 
 .form input[type="text"] {
@@ -224,12 +221,12 @@ img.hover-shadow {
 	font-weight: 500;
 	color: #8D8E8F;
 	padding: 2% 1% 2% 7%;
-	width: 80%;
+	width: 95%;
 	border-top: 1px solid #090B0D;
 	border-right: 2px solid #424549;
 	border-bottom: 2px solid #424549;
 	border-left: 1px solid #090B0D;
-	margin: 10px 1em;
+	margin: 10px 10px 10px 10px;
 	border-radius: 4px;
 	background: #FFFFFF;
 	font-family: 'Book Antiqua';

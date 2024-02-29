@@ -39,7 +39,7 @@
 
         <div class="jumbotron jumbotron-fluid bg-dark text-center">
             <div class="container">
-                <h1 class="display-4 text-light">Academy Cinemas</h1>
+                <h1 class="display-4 text-light" style="color:#fff; font-family: roboto; font-weight: 900; text-transform: uppercase;">Academy Cinemas</h1>
                 <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
             </div>
         </div>
@@ -98,6 +98,7 @@
             </div>
             <div class="card">
                 <img class="card-img-top" src="./images/the_cell.png" alt="the cell 2000 still">
+                <br>
                 <div class="card-body">
                     <h5 class="card-title">The Cell</h5>
                     <p class="card-text">Catherine Deane, a female psychotherapist, delves into the mind of a comatose serial killer using experimental
@@ -107,6 +108,7 @@
                     <a href="#" class="badge badge-dark">4:30pm</a>
                     <a href="#" class="badge badge-dark">7:30pm</a>
                     <a href="#" class="badge badge-dark">9:00pm</a>
+                    <span class="badge badge-pill badge-warning">Ending April 1st!</span>       <!--pill badge notifying customers that movie will only run until april 1st-->
                 </div>
             </div>
             <div class="card">
@@ -125,20 +127,80 @@
         </div>
     </section>
 
-        <!-- /SHOWTIMES -->
+    <!-- /SHOWTIMES -->
 
-    <section id="deals">
-        <div class="text-center">
-            <form>
-                <h3 class="text-primary my-5" style="font-family: serif"><strong>SIGN UP FOR MOVIE CLUB REWARDS!</strong></h3>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+    <!--JUMBOTRON HEADING-->
+    <div class="jumbotron jumbotron-fluid bg-dark mt-5 text-center">
+        <div class="container">
+            <h1 class="display-4 hidden-sm-down" style="color:#fff; font-family: roboto; font-weight: 900; text-transform: uppercase;">
+            Movie Deals</h1>
+            <p class="lead" style="color:#fff;">Check out our monthly deals...</p>
+            <!--MOVIE DEALS-->
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+            <!--/MOVIE DEALS-->
         </div>
+    </div>
+    <!--/JUMBOTRON HEADING-->
+    
+    <!--SIGNUP FORM-->
+    <div class="row">
+        <div class="container text-center col-md-6" id="deals">
+            <div class="container text-center">
+                <h2 class="display-5 my-4 col-lg-auto text-primary">Stay current on movies!</h2>
+                <div class="input-group mb-5">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie rewards!">Sign Up</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/SIGNUP FORM-->
 
+    <!--FORM MODAL-->
+    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register to receive movie deals...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                
+                <form>    
+                    <fieldset class="form-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" class="form-control" id="firstname">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" class="form-control" id="lastname">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" id="email">
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="text" class="form-control" id="password">
+                    </fieldset>
+                </form>    
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/FORM MODAL-->
+
+    <!--FOOTER-->
         <div class="container my-5">
             <ul class="nav nav-inline">
                 <li class="nav-item">
@@ -156,9 +218,10 @@
             </ul>
         </div>
     </section>
+    <!--/FOOTER-->
 
 
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -169,6 +232,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+    <script>
+        $('.popover-dismiss').popover({        
+                trigger: 'focus'
+        })
+    </script>
+
+    <!--copied "popover-dismiss" to button class in signup form to trigger the dismissible popover-->
+
 </body>
 
 </html>

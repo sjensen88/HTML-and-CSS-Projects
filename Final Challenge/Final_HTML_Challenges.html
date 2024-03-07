@@ -8,6 +8,14 @@
 
 <body>
 
+    <script>
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+    </script>
+
     <div class="navbar">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -15,6 +23,8 @@
     </div>
 
     <h1>Welcome to TTA's Final HTML Challenge</h1>
+    <hr>
+    <p style="font-size: 2vw; text-align: center;">Resize the browser window to see how this font size scales.</p>
 
     <div class="actions">
         <h3>Challenge 1:</h3>

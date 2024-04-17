@@ -331,6 +331,14 @@ footer {
     clear: both;                        /*clears any other elements from floating on the left or the right of an element*/
 }
 
+#about p {
+    font-size: 1.2vw;
+}
+
+#github p {
+    font-size: 1.2vw;
+}
+
 
 /*----------------------------
     CONTACT FORM STYLING

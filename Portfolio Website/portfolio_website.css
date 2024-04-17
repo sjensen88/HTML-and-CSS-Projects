@@ -78,8 +78,9 @@ img {
     max-width: 100%;
     height: 340px;
     max-height: 100%;
-    display: block;                 /*enables images to be centered*/
+    display: inline-block;          /*enables images to be centered*/
     margin: auto auto auto auto;    /*centers all images*/
+    vertical-align: middle;
 }
                                     /*removed grayscale filter*/
 
@@ -325,6 +326,8 @@ footer {
     padding: 1.6%;
     height: 550px;
     background-color: rgba(131, 133, 130);
+    display: grid;
+    place-items: center;
 }
 
 .column_tall {                          /*for columns in the final row*/

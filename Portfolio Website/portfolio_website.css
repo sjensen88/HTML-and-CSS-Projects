@@ -9,9 +9,6 @@ body {
     margin: 0%;             /*site displays all the way to edge of browser screen*/
     opacity: 1;             /*this and transition affect the page loading fade-in effect*/
     transition: 2s opacity; /*2 second fade-in*/
-    letter-spacing: .2vw;
-    font-family: Avant Garde, Helvetica;
-    font-size: 1.5vw;
     overflow-x: hidden;     /*prevents the horiz. scroll bar from appearing when the quote is hovered over*/
     user-select: none;      /*prevents the text on the webpage from being highlighted by the user*/
 
@@ -23,48 +20,40 @@ body.fade-out {             /*fade effect when page is loaded*/
 
 h1 {
     text-transform: uppercase;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Antonio", sans-serif;
+    font-size: 65px;
+    letter-spacing: 0em;
     text-align: center;
     margin-top: 3%;
     color: #1a1a1a;
 }
 
-h1:hover {
-    filter: grayscale(5%);  /*adds slightly gray filter to h1 headings when hovered over*/
-    transform: scale(1.1);    /*h1 elements will slightly increase in size when hovered over*/
-    transition: transform .5s;
-}
-
 .white-text {
-    color: #fff;          /*portfolio title text*/
+    color: #D1D0CB;       /*portfolio title text*/
     padding-top: 10vh;      /*adds padding (10% of the viewport height) to top of Portfolio Title text*/
 }
 
 p {
-    font-family: Perpetua, Rockwell;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: .1vw;
+    font-weight: normal;
     text-align: justify;        /*justifies text within p elements*/
-    font-size: 12px;
     padding-left: 5vw;          /*relative padding equal to 5% of viewport width*/
     padding-right: 5vw;         /*relative padding equal to 5% of viewport width*/
     letter-spacing: normal;     /*didn't like the wide spacing in example code, found it difficult to read*/
 }
 
-p:hover {
-    transition: transform .5s;
-    transform: scale(1);
-}
 
 .center {                       /*applies to all centered text*/
     text-align: center;
+    font-size: 18px;
+    color: #D1D0CB;
 }
 
-.center:hover {                 /*affects quote, github link, and footer*/
-    transition: transform 2s;
-    transform: scale(1.1);
-}
 
 a {                             /*anchor elements*/
-    color:rgba(75, 156, 55);  /*makes all links a soft green*/
+    color:#6E6353;            /*makes all links a soft brown*/
     cursor: pointer;
     text-decoration: underline; /*ensures all links are underlined*/
 }
@@ -81,6 +70,7 @@ img {
     display: inline-block;          /*enables images to be centered*/
     margin: auto auto auto auto;    /*centers all images*/
     vertical-align: middle;
+    opacity: 1;
 }
                                     /*removed grayscale filter*/
 
@@ -93,7 +83,7 @@ img {
 
 footer {
     padding: 2%;
-    background-color: white;
+    background-color: #6E6353;
 }
 
 /*---------------------------------
@@ -106,7 +96,7 @@ footer {
 
 .navbar {
     overflow: hidden;           /*any content that overflows beyond boundary of nav bar is not displayed*/
-    background-color: black;
+    background-color: #2e2e2e;
     position: fixed;
     top: 0;
     width: 100%;
@@ -123,10 +113,10 @@ footer {
 .navbar a {                     /*navbar links*/
     float: left;
     display: block;
-    color: rgba(227, 238, 221, 0.8);
+    color: #A2A092;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     text-align: center;
     position: relative;          /*sets text rel to normal positioning*/
@@ -147,8 +137,7 @@ footer {
 }
 
 .navbar a:hover {                   /*navbar hover effects*/
-    background-color: #524d48;
-    font-weight: bold;              /*makes text bold when hovered over*/
+    background-color: #524d48;             
     cursor: pointer;
 }                                   /*omitted .5s ease-in from the example code, makes the experience laggy*/
 
@@ -165,7 +154,7 @@ footer {
     bottom: 0;
     min-width: 100%;    /*video stretches to fit page*/
     z-index: -1;        /*video stays behind other elements*/
-    filter: blur(2px);  /*i blurred the video a bit so that the white text is easier to read*/
+    filter: blur(5px);  /*i blurred the video a bit so that the white text is easier to read*/
 }
 
 @media screen and (max-width:576px) {
@@ -176,7 +165,7 @@ footer {
 
 .video-text {                           /*text overlaying the video*/
     background: rgba (0, 0, 0 , 0.5);   /*makes a semi-transparent bg for text*/
-    color: white;                     /*font over video*/
+    color: #D1D0CB;                   /*font over video*/
     width: 100%;                        /*ensures text container fills width of video*/
     height: 100vh;                      /*ensures video-text container fills height of viewport so that*/
                                         /*the slideshow is not partially displayed*/
@@ -199,7 +188,8 @@ footer {
       SLIDESHOW STYLING
 -----------------------------*/
 #slideshow_bg {
-    background: rgba(255,255,255,0.35); /*creates slightly transparent white bg that is placed over video in the bg*/
+    background: #A2A092;          /*I removed the slightly transparent white bg that is placed over video in the bg*/
+    opacity: 1;
 }
 
 .mySlides {
@@ -222,7 +212,6 @@ footer {
     vertical-align: middle;         /*centers images vertically within the slideshow container*/
     height: auto;                   /*height of images automatically adjusted based on content*/
                                     /*(i.e., if images are different sizes they will display as diff sizes)*/
-    box-shadow: 0px 1px 6px 8px rgba(0,0,0, .75);
     width: 100%;                    /*width of images automatically adjusted based on the content*/
 }
 
@@ -247,21 +236,21 @@ footer {
 
 .previous:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);  /*makes bg of the arrows a transparent gray color*/
-    color: white;                       /*makes arrows white when hovered over*/
+    color: #D1D0CB;                     /*makes arrows white when hovered over*/
 }
 
 .text {                             /*slideshow text*/
-    color: white;
+    color: #D1D0CB;
     padding: 1vw;
     position: absolute;             /*ensures text is positioned within the image*/
     bottom: 0;                      /*sets text at the bottom of the image*/
     width: 100%;                    /*element covers full width of image*/
     text-align: center;
-    font-family: Perpetua, Rockwell;
+    font-family: "Open Sans", sans-serif;
     letter-spacing: normal;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     background-color: rgba(0,0,0, .75);
-    font-weight: bold;
+    font-weight: normal;
     border-radius: 0px 0px 3px 3px; /*gives text bg rounded corners on bottom left and right*/
                                     /*had to modify this from 7px to 3px because white space was showing*/
 }
@@ -311,7 +300,7 @@ footer {
     width: 50%;                     /*ensures column takes up half the page width*/
     padding: 1.6%;
     height: 550px;
-    background-color: rgba(245, 246, 245);
+    background-color: #D1D0CB;
 }
 
 @media screen and (max-width: 576px) {
@@ -325,7 +314,7 @@ footer {
     width: 50%;
     padding: 1.6%;
     height: 550px;
-    background-color: rgba(131, 133, 130);
+    background-color: #2e2e2e;
     display: grid;
     place-items: center;
 }
@@ -394,7 +383,7 @@ footer {
 
 
 button {
-    font-family: "Trebuchet MS", Optima;
+    font-family: "Antonio", sans-serif;
     letter-spacing: .3vw;
     font-size: 1.5vw;
     font-weight: bold;

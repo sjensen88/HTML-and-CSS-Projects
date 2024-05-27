@@ -1,0 +1,73 @@
+body {
+    background-color: #f3eeec;
+}
+
+.navbar {
+    font-family: "Cormorant", serif;
+    text-transform: uppercase;
+    color: #221612;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 5vw;
+
+}
+
+h2 {
+    text-align: center;
+    color: rgb(241, 233, 233);
+    letter-spacing: 2px;
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 2vw;
+    padding-top: 10px;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron {
+    background-size: cover;
+    position: relative;
+}
+
+h3 {
+    font-family: "Cormorant", serif;
+    color: rgb(49, 33, 24);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.photo-container img {
+    height: 500px;
+    padding-right: 20px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.row {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn {
+    font-family: "Roboto";
+}

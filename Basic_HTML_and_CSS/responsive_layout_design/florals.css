@@ -1,0 +1,71 @@
+body {
+    background-color: #1a211c;
+}
+
+.navbar {
+    font-family: "Cinzel", serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(233, 236, 229);
+    letter-spacing: 3px;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 80px;
+    margin-bottom: 70px;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron {
+    background-size: cover;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-family:"Cinzel", serif;
+    color: rgb(233, 236, 229);
+}
+
+h3 {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(233, 236, 229);
+    padding-top: 50px;
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+
+.photo-container img {
+    height: 500px;
+    padding-right: 20px;
+}
+
+.products {
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: black;
+}
+
+.row {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn {
+    font-family: "Roboto";
+}

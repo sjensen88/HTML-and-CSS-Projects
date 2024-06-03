@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Animation Libraries Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+    <script src="/node_modules/animejs/lib/anime.min.js"></script>
+
+    <link rel="stylesheet" href="./animation.css">
+</head>
+
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <script>
+        anime ({
+            targets: ".circle",
+            translateX: 250,
+            delay: anime.stagger(200, { start: 500 })
+        })
+    </script>
+
+
+    <div class="box"></div>
+
+    <script>
+        let animation = anime({
+            targets: ".box",
+            translateX: 150,
+            height: "80px",
+            width: "80px",
+            duration: 2000,
+            easing: "linear",
+            direction: "alternate",
+            loop: true,
+            });
+    </script>
+
+    <div class="triangle"></div>
+
+    <script>
+        anime({
+                targets: ".triangle",
+                translateX: 250,
+                scale: 1.5,
+                rotate: '1turn'
+            });
+    </script>
+
+
+</body>
+</html>

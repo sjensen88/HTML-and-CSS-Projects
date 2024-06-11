@@ -18,13 +18,19 @@ body.fade-out {             /*fade effect when page is loaded*/
     opacity: .1;            /*sets level of opacity at start of page load*/
 }
 
+#home img {                 /*background image*/
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
 h1 {
     text-transform: uppercase;
     font-family: "Antonio", sans-serif;
     font-size: 65px;
     letter-spacing: 0em;
     text-align: center;
-    margin-top: 3%;
+    padding-top: 20px;
     color: #1a1a1a;
 }
 
@@ -62,6 +68,7 @@ q {
     font-style: italic;         /*italicizes the quote*/
 }
 
+
 img {
     border-radius: 4px;
     max-width: 100%;
@@ -72,7 +79,7 @@ img {
     vertical-align: middle;
     opacity: 1;
 }
-                                    /*removed grayscale filter*/
+
 
 @media screen and (max-width:576px) {
     img {
@@ -146,31 +153,15 @@ footer {
 --------------------------------*/
 
 /*--------------------------------
-     BACKGROUND VIDEO STYLING
+     BACKGROUND IMAGE STYLING
 --------------------------------*/
-#typing-vid {
-    position: fixed;    /*fixes video to the page*/
-    right: 0;           /*no spaces between edge of video and edge of page*/
-    bottom: 0;
-    min-width: 100%;    /*video stretches to fit page*/
-    z-index: -1;        /*video stays behind other elements*/
-    filter: blur(5px);  /*i blurred the video a bit so that the white text is easier to read*/
-}
 
-@media screen and (max-width:576px) {
-    #typing-vid {
-        display: none;                  /*vid will not display on screens 576px and smaller*/
-    }
-}
-
-.video-text {                           /*text overlaying the video*/
-    background: rgba (0, 0, 0 , 0.5);   /*makes a semi-transparent bg for text*/
-    color: #D1D0CB;                   /*font over video*/
+.background-text {                      /*text overlaying the background image*/
+    color: #D1D0CB;                   /*color of text over video*/
     width: 100%;                        /*ensures text container fills width of video*/
-    height: 100vh;                      /*ensures video-text container fills height of viewport so that*/
-                                        /*the slideshow is not partially displayed*/
+    height: 100vh;
     padding-top: 2vh;                   /*adds padding around video-text container so bg goes slightly beyond the text*/           
-    position: relative;                 /*allows us to use the animation below*/
+    position: absolute;                 /*allows us to use the animation below*/
     -webkit-animation: moveVideoText 2s;
     animation: moveVideoText 2s;
 }
@@ -192,6 +183,10 @@ footer {
     opacity: 1;
 }
 
+#slideshow h1 {
+    margin-top: 0;
+}
+
 .mySlides {
     display: none;                  /*prevents images from being displayed, we will use JS to display these*/
 }
@@ -199,7 +194,7 @@ footer {
 #slideshow_container {
     width: 39.5vw;                  /*relative sizing of container set to 39.5% of viewport width*/
     height: auto;                   /*automatically adjusted based on content it's displaying*/
-    padding-top: 4%;                /*adds small padding to top of slideshow container*/
+    padding-top: 0;                /*adds small padding to top of slideshow container*/
     position: relative;             /*sets the container relative to its normal positioning*/
     margin: auto;                   /*this horizontally centers the container on the page*/
 }

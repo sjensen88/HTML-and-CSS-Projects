@@ -21,7 +21,7 @@ body.fade-out {             /*fade effect when page is loaded*/
 #home img {                 /*background image*/
     width: 100%;
     height: auto;
-    position: absolute;
+    position: relative;
 }
 
 h1 {
@@ -318,6 +318,7 @@ footer {
     padding-top: 3.5%;
     height: 450px;
 }
+
 
 .row:after {
     content: "";                        /*by leaving this blank, we are allowing the footer to be displayed*/

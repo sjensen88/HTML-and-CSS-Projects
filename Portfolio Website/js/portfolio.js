@@ -28,6 +28,7 @@ function showSlides(n) {
     var dots = document.getElementsByClassName("dot");
     //if n > length of array "slides", the slideIndex is set to 1
     if (n > slides.length) { slideIndex = 1 };
+    if (n  < 1) {slideIndex = slides.length}
     //if n < 1, the slideIndex is set to the length of the array "slides"
     for (i = 0; i < slides.length; i++) {
         //this for loop takes each item in the array "slides" and sets the display to none

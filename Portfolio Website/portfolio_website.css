@@ -20,7 +20,7 @@ body.fade-out {             /*fade effect when page is loaded*/
 
 #home img {                 /*background image*/
     width: 100%;
-    height: auto;
+    height: 550px;
     position: relative;
 }
 
@@ -162,6 +162,7 @@ footer {
     height: 100vh;
     padding-top: 2vh;                   /*adds padding around video-text container so bg goes slightly beyond the text*/           
     position: absolute;                 /*allows us to use the animation below*/
+    top: 3vw;
     -webkit-animation: moveVideoText 2s;
     animation: moveVideoText 2s;
 }
@@ -171,9 +172,9 @@ footer {
     to {top: 0vw;}                      /*moves the video text to normal positioning on the viewport*/
 }
 
-/*-----------------------------
-     END OF VIDEO STYLING
------------------------------*/
+/*---------------------------------------
+     END OF BACKGROUND IMAGE STYLING
+---------------------------------------*/
 
 /*-----------------------------
       SLIDESHOW STYLING

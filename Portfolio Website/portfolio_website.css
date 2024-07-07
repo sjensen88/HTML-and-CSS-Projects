@@ -90,7 +90,7 @@ img {
 
 footer {
     padding: 2%;
-    background-color: #6E6353;
+    background-color: #aeaca6;
 }
 
 /*---------------------------------
@@ -120,7 +120,7 @@ footer {
 .navbar a {                     /*navbar links*/
     float: left;
     display: block;
-    color: #A2A092;
+    color: #D1D0CB;
     padding: 14px 16px;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
@@ -169,7 +169,7 @@ footer {
 
 @keyframes moveVideoText {              /*causes text to move up from bottom of page upon load*/
     from {top: -100vw;}                 /*sets position of video text to above the viewport*/
-    to {top: 0vw;}                      /*moves the video text to normal positioning on the viewport*/
+    to {top: 3vw;}                      /*moves the video text to normal positioning on the viewport*/
 }
 
 /*---------------------------------------
@@ -180,7 +180,7 @@ footer {
       SLIDESHOW STYLING
 -----------------------------*/
 #slideshow_bg {
-    background: #A2A092;          /*I removed the slightly transparent white bg that is placed over video in the bg*/
+    background: #aeaca6;          /*I removed the slightly transparent white bg that is placed over video in the bg*/
     opacity: 1;
 }
 
@@ -296,7 +296,7 @@ footer {
     width: 50%;                     /*ensures column takes up half the page width*/
     padding: 1.6%;
     height: 600px;
-    background-color: #D1D0CB;
+    background-color: #dcdbd6;
 }
 
 @media screen and (max-width: 576px) {
@@ -372,9 +372,11 @@ footer {
 }
 
 .form-container {
-    max-width: 49vw;
-    padding: 1vw;                   /*adds padding btwn form-popup and form-container*/
+    max-width: 40vw;
+    height: auto;
+    padding: 2vw;                   /*adds padding btwn form-popup and form-container*/
     background-color: white;
+    font-family: "Open Sans", sans-serif;
 }
 
 .form-container input[type=text] {  /*input fields styling*/
@@ -384,6 +386,7 @@ footer {
     border: none;
     background: gainsboro;
     font-size: 1vw;
+    font-family: "Open Sans", sans-serif;
 }
 
 

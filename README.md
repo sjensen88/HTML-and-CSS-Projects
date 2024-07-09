@@ -20,7 +20,7 @@ The company, Canon Hikers, wanted an informational website that would encourage 
 
 Portfolio Website
 
-Created a development portfolio website using HTML, CSS and Javascript. It features a slideshow which presents snippets of my work as well as a popup contact form.
+Created a development portfolio website using HTML and styled with CSS. It features a slideshow which presents snippets of my work as well as a pop-up contact form, both of which were built using JavaScript.
 
 Responsive Layout Design
 

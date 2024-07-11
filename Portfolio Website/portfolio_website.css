@@ -182,6 +182,7 @@ footer {
 #slideshow_bg {
     background: #aeaca6;          /*I removed the slightly transparent white bg that is placed over video in the bg*/
     opacity: 1;
+    height: 550px;
 }
 
 #slideshow h1 {
@@ -294,7 +295,7 @@ footer {
 .column_1 {
     float: left;
     width: 50%;                     /*ensures column takes up half the page width*/
-    padding: 1.6%;
+    padding: 1%;
     height: 600px;
     background-color: #dcdbd6;
 }
